@@ -1,0 +1,9 @@
+:root {
+  background-color: #fada5e;
+}
+
+.app {
+  display: flex;
+  height: 120vh;
+  background-color: #fada5e;
+}

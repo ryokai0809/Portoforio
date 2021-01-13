@@ -1,0 +1,131 @@
+.pic {
+  width: 1000px;
+  height: 500px;
+  border: outset;
+  border-radius: 10%;
+  text-align: center;
+}
+
+.long_pic {
+  width: 1000px;
+  height: 166px;
+  border: outset;
+  border-radius: 10%;
+  margin-bottom: 5px;
+}
+
+.rule_detail {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  color: gray;
+  font-size: 7px;
+}
+
+.rule {
+  counter-reset: my-counter;
+  list-style: none;
+  font-weight: bold;
+}
+
+.rule li:before {
+  content: "Step " counter(my-counter);
+  counter-increment: my-counter;
+  padding: 7px;
+  font-weight: bold;
+  color: black;
+  background: linear-gradient(135deg, rgb(233, 216, 123), yellow);
+  border-radius: 70px;
+  border-style: outset;
+  font-family: "Creepster", cursive;
+}
+
+.rule_detail {
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.important {
+  color: red;
+}
+
+.footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  color: gray;
+  font-size: 15px;
+}
+
+@media (max-width: 600px) {
+  .pic {
+    width: 350px;
+    height: 277px;
+    border: outset;
+    border-radius: 10%;
+  }
+
+  .long_pic {
+    width: 340px;
+    height: 90px;
+    border: outset;
+    border-radius: 10%;
+    margin-bottom: 5px;
+  }
+
+  .rule_detail {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    color: gray;
+    font-size: 7px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+  .pic {
+    width: 660px;
+    height: 330px;
+    border: outset;
+    border-radius: 10%;
+  }
+
+  .long_pic {
+    width: 660px;
+    height: 110px;
+    border: outset;
+    border-radius: 10%;
+    margin-bottom: 5px;
+  }
+
+  .rule_detail {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    color: gray;
+    font-size: 7px;
+  }
+}

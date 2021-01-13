@@ -1,0 +1,70 @@
+.root {
+  width: 1200px;
+}
+
+.feed {
+  flex: 1;
+  overflow: scroll;
+  background-color: #fada5e;
+}
+.feed::-webkit-scrollbar {
+  display: none;
+}
+
+.logout {
+  color: #b1921b;
+  border-right: 4px solid #cea82c;
+  border-bottom: 10px solid #987c1e;
+  border-left: 4px solid #ffed8b;
+  border-radius: 0;
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    from(#ffd75b),
+    color-stop(30%, #fff5a0),
+    color-stop(40%, #fffabe),
+    color-stop(50%, #ffffdb),
+    color-stop(70%, #fff5a0),
+    to(#fdd456)
+  );
+  background: -webkit-linear-gradient(
+    right,
+    #ffd75b 0%,
+    #fff5a0 30%,
+    #fffabe 40%,
+    #ffffdb 50%,
+    #fff5a0 70%,
+    #fdd456 100%
+  );
+  background: linear-gradient(
+    -90deg,
+    #ffd75b 0%,
+    #fff5a0 30%,
+    #fffabe 40%,
+    #ffffdb 50%,
+    #fff5a0 70%,
+    #fdd456 100%
+  );
+  text-shadow: -1px -1px 1px #ffffd9;
+}
+
+.logout:hover {
+  margin-top: 3px;
+  color: #b1921b;
+  border-right: 4px solid #cea82c;
+  border-bottom: 7px solid #987c1e;
+  border-left: 4px solid #ffed8b;
+}
+
+@media (max-width: 600px) {
+  .root {
+    width: 375px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+  .root {
+    width: 700px;
+  }
+}
